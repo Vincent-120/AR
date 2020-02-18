@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.8/aframe/build/aframe-ar.js"></script>
+    <title>Three.js</title>
+</head>
+<body>
+    <a-scene embedded arjs>
+        <a-marker preset="hiro">
+            <a-box position='0 0.5 0' material='color: yellow;'></a-box>
+        </a-marker>
+        <a-entity camera><canvas id="c"></canvas></a-entity>
+      </a-scene>
+
+    <script src="three.min.js"></script>
+    <script src="OrbitControls.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
