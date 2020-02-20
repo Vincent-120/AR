@@ -29,7 +29,7 @@
             <a-marker preset="hiro">
 
                 <!-- !* inside the marker we specify the style of our model (scale, position, rotation, see Doc AR.js) -->
-                <a-entity gltf-model="#asset" scale="1 1 1" animation-mixer="clip:SMALL BUGG IDLE"></a-entity>
+                <a-entity gltf-model="#asset" scale="1 1 1" rotation="0 90 0" animation-mixer="clip:SMALL BUGG IDLE"></a-entity>
             </a-marker>
 
             <!-- !* and finally we link the camera with an "a-entity" tag so that it all appears but in the case where we will use several models we will have to use "a-marker-camera" but I will come back to it on another work -->
