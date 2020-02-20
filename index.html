@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
-    <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.8/aframe/build/aframe-ar.js"></script>
-    <title>Three.js</title>
-</head>
-<body style='margin : 0px; overflow: hidden;'>
-    <a-scene embedded arjs>
-        <a-assets>
-            <a-asset-item id="animated-asset" src="./small_glytchbug/scene.gltf"></a-asset-item>
-        </a-assets>
-        <a-marker scale=".1 .1 .1" preset="hiro">
-                <a-entity gltf-model="#animated-asset" rotation="0 90 0" scale="1 1 1" animation-mixer="clip:SMALL BUGG IDDLE"></a-entity>
-        </a-marker>
-        <a-entity camera></a-entity>
-      </a-scene>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+
+        <script src="https://raw.githack.com/jeromeetienne/AR.js/2.2.0/aframe/build/aframe-ar.js"></script>
+
+        <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+
+        <title>teste AR Three</title>
+    </head>
+    <body style='margin : 0px; overflow: hidden;'>
+
+        <a-scene ambedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+            <a-assets>
+                <a-asset-item id="asset" src="./small_glutchbug/scene.gltf"></a-asset-item>
+            </a-assets>
+
+            <a-marker preset="hiro">
+                <a-entity fbx-model="#asset" scale="0.5 0.5 0.5" animation-mixer="clip:SMALL BUGG IDLE"></a-entity>
+            </a-marker>
+            <a-entity camera></a-entity>
+        </a-scene>
+    </body>
 </html>
