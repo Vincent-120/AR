@@ -16,11 +16,11 @@
 
         <a-scene ambedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
             <a-assets>
-                <a-asset-item id="asset" src="./small_glutchbug/scene.gltf"></a-asset-item>
+                <a-asset-item id="asset" src="./small_glytchbug/scene.gltf"></a-asset-item>
             </a-assets>
 
             <a-marker preset="hiro">
-                <a-entity fbx-model="#asset" scale="0.5 0.5 0.5" animation-mixer="clip:SMALL BUGG IDLE"></a-entity>
+                <a-entity gltf-model="#asset" scale="0.5 0.5 0.5" animation-mixer="clip:SMALL BUGG IDLE"></a-entity>
             </a-marker>
             <a-entity camera></a-entity>
         </a-scene>
