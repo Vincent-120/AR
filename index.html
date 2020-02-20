@@ -12,16 +12,27 @@
 
         <title>teste AR Three</title>
     </head>
+    
     <body style='margin : 0px; overflow: hidden;'>
 
-        <a-scene ambedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+        <!-- !* creation of the scene is equal to canva in three -->
+        <a-scene ambedded arjs>
+
+            <!-- !* here we create an asset that will contain the different items -->
             <a-assets>
+
+                <!-- !* asset-item is the tag that acts as the intermediary between your 3D model and your camera it needs an ID (to be called below) and a path to your 3D model-->
                 <a-asset-item id="asset" src="./small_glytchbug/scene.gltf"></a-asset-item>
             </a-assets>
 
+            <!-- !* here we initiate to which marker our 3D model will be generated (actualy we use ce standar preset "hiro") -->
             <a-marker preset="hiro">
+
+                <!-- !* inside the marker we specify the style of our model (scale, position, rotation, see Doc AR.js) -->
                 <a-entity gltf-model="#asset" scale="1 1 1" animation-mixer="clip:SMALL BUGG IDLE"></a-entity>
             </a-marker>
+
+            <!-- !* and finally we link the camera with an "a-entity" tag so that it all appears but in the case where we will use several models we will have to use "a-marker-camera" but I will come back to it on another work -->
             <a-entity camera></a-entity>
         </a-scene>
     </body>
