@@ -14,7 +14,7 @@ A notre avantage l'ar ce programme principalement sur l'html ! N'es pas merveill
 ## Ca marche comment ?
 <hr>
 
-Ar.js est une librairie pur web ! Et oui pas d'installation requise *swaaag*
+Ar.js est une librairie pur web et legère ! Et oui pas d'installation requise *swaaag*
 
 Et tu crois que sur telephone il te faut le super Iphone ou Samsung dernière génération ? Et bien je vais te décevoir, car pas besoin d'un technologie a la pointe et hors prix ! Et j'assure ca fonctionne a 60 fps n'es pas *Beautiful* !
 
