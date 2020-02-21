@@ -21,9 +21,11 @@ Et tu crois que sur telephone il te faut le super Iphone ou Samsung derni√®re g√
 ## Travaille Final
 <hr>
 
-![QRcode](./assetMd/qr-code.png)
+Scane ce QRcode et reste dessus.
 
-Tu peux observer le travaille ici [here](https://vincent-120.github.io/Teste_AR_Threejs/)
+![QRcode](./assetsMd/qr-code.png)
+
+Tu peux observer le travaille sur ton navigateur ici [here](https://vincent-120.github.io/Teste_AR_Threejs/)
 
 ## Les sources 
 <hr>
