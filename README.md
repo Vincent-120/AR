@@ -1,6 +1,6 @@
 # AR avec AR.Js
 
-![logo]("./assetsMd/logo.png")
+![QRcode](./assetsMd/logo.jpeg)
 
 Teste de AR.js combiner a Three.js
 
@@ -24,6 +24,7 @@ Et tu crois que sur telephone il te faut le super Iphone ou Samsung derni√®re g√
 Scane ce QRcode et reste dessus.
 
 ![QRcode](./assetsMd/qr-code.png)
+
 
 Tu peux observer le travaille sur ton navigateur ici [here](https://vincent-120.github.io/Teste_AR_Threejs/)
 
